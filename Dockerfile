@@ -14,6 +14,8 @@ EXPOSE 5000
 
 RUN pip3 install -r requirements.txt
 
+RUN sudo apt install git
+
 RUN git clone https://github.com/intbio-ncl/shortbol
 
 ENV FLASK_APP=app.py
