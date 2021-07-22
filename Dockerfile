@@ -6,6 +6,7 @@ RUN apk add --no-cache --update \
     libffi-dev openssl-dev \
     libxml2 libxml2-dev \
     libxslt libxslt-dev \
+    git \
     libjpeg-turbo-dev zlib-dev
 
 COPY . .
@@ -13,8 +14,6 @@ COPY . .
 EXPOSE 5000
 
 RUN pip3 install -r requirements.txt
-
-RUN apt install git
 
 RUN git clone https://github.com/intbio-ncl/shortbol
 
