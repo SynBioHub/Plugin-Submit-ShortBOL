@@ -1,7 +1,7 @@
 from flask import Flask, request, abort, send_file, jsonify, send_from_directory
 import os, shutil, glob, random, string, tempfile, requests
-import sys
-sys.path.insert(0,'shortbol')
+# import sys
+# sys.path.insert(0,'shortbol')
 import shortbol.run as shb_run
 
 app = Flask(__name__)
