@@ -1,9 +1,9 @@
-# Plugin-Submit-Test
-A very simple submit plugin that returns sbol files with submit information
+# Plugin-Submit-Shortbol
+A very submit plugin that returns sbol files from shortbol files
 
 # Install
 ## Docker
-Run `docker run --publish 8087:5000 --detach --name submit-plug synbiohub/plugin-submit-test:snapshot`
+Run `docker run --publish 8097:5000 --detach --name submit-shortbol synbiohub/plugin-submit-shortbol:snapshot`
 Check it is up using http://localhost:8087/status.
 
 ## Using Python
